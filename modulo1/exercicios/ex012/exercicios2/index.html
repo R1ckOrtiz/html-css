@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos Legais</title>
+    <style>
+        body {
+            background-color: #222;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .video-card {
+            background-color: #333;
+            padding: 10px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .video-card:hover {
+            transform: scale(1.05);
+        }
+        .video-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Vídeos legais para assistir</h1>
+        <div class="grid">
+            <a href="https://www.youtube.com/watch?v=rsFCVjr5yxc" target="_blank" type="_self" class="video-card">
+                <img src="imagens/thumb-hardware.png" alt="História da Internet">
+            </a>
+            <a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" class="video-card">
+                <img src="imagens/thumb-html.png" alt="Curso de JavaScript">
+            </a>
+            <a href="https://www.youtube.com/watch?v=iT6E92Kt38o&list=PLHz_AreHm4dn1JHgN9wpbIUhzZmycYQXW" class="video-card">
+                <img src="imagens/thumb-python.png" alt="Vídeo sobre Hardware">
+            </a>
+            <a href="https://www.youtube.com/watch?v=S9uPNppGsGo" class="video-card">
+                <img src="imagens/thumb-js.png" alt="Seja um Programador">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
